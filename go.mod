@@ -1,3 +1,3 @@
-module github.com/go-fsctl/outdir
+module github.com/go-appdirs/outdir
 
 go 1.26.4

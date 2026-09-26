@@ -12,6 +12,17 @@ dir, err := outdir.Ensure(outdir.Spec{
 
 Pure Go, `CGO_ENABLED=0`, no dependencies.
 
+```sh
+go get github.com/go-appdirs/outdir
+```
+
+⚠️ The import path changed in **v0.2.0**: this package used to live at
+`github.com/go-fsctl/outdir`, in an organisation whose every other module
+drives a kernel storage interface — while this one opens nothing. That
+repository was **deleted rather than left redirecting**, because a transfer
+redirect answers the old path with the new repository's identity, which a tool
+cannot see through. The old path now fails, which is the honest answer.
+
 ## Why
 
 ⛔ **The mistake it prevents has happened.** A live test wrote a capture of a
